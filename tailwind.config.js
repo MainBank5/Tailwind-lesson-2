@@ -9,7 +9,7 @@ module.exports = {
       xl: '1440px',
     },
     textDecorationThickness: {
-      3: '3px',
+      8: '6px',
     },
     
     fontSize: {
