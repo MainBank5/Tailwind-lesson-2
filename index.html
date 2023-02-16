@@ -54,17 +54,26 @@
 
     <div>
         <h2 class="text-4xl font-bold text-center py-5">Flexbox Tailwind</h2>
-        <div class="flex flex-wrap ">
+        <div class="flex flex-wrap flex-col-reverse  ">
             <div class="bg-red-600 text-white h-26">
-                <p>Flex item 1</p>
+                <p class="order-2">Flex item 1</p>
             </div>
             <div class="bg-blue-600 text-white h-26">
                 <p>Flex item 2</p>
             </div>
-            <div class="bg-yellow-300 text-white h-26">
+            <div class="bg-yellow-300 font-sans text-white h-26">
                 <p>Flex item 3</p>
             </div>
         </div>
+    </div>
+
+    <div class="parent">
+        <div class=" text-green-400 font-bold">Header</div>
+        <div class="flex">
+            <div class= "text-green-400 font-bold">Main Content</div>
+            <div class=" text-green-400 font-bold">SideBar</div>
+        </div>
+        
     </div>
 </body>
 </html>
