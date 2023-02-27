@@ -10,7 +10,7 @@
     <h1 class="text-xs lg:italic">title 1</h1>
     <h2 class="text-7xl italic">title 2</h2>
     <h3 class="text-sm hover:italic">title 3</h3>
-    <h1 class="font-black">title 1</h1>
+    <h1 class="font-black ">title 1</h1>
     <p class="text-4xl text-red-600 italic font-normal hover:font-black">A regular paragraph</p>
     <p class="text-xl text-yellow-400 italic underline">A description paragraph</p>
     <!--Customized the base units-->
@@ -54,16 +54,16 @@
 
     <div>
         <h2 class="text-4xl font-bold text-center py-5">Flexbox Tailwind</h2>
-        <div class="flex flex-wrap h-full gap-5">
+        <div class="flex flex-wrap gap-9 h-full">
 <!--for the items to grow and take all the available space use flex auto.
 flex-grow also allows the item to grow. But flex-grow-0 prevents them from growing just like flex-shrink-->
-            <div class="bg-red-600 text-white h-26 flex-auto">
+            <div class="bg-red-600 text-white flex-auto h-26">
                 <p>Flex item 1</p>
             </div>
-            <div class="bg-blue-600 text-white h-26 flex-auto">
+            <div class="bg-blue-600 text-white flex-auto h-26 ">
                 <p>Flex item 2</p>
             </div>
-            <div class=" bg-yellow-300 font-sans text-white h-26 flex-auto">
+            <div class=" bg-yellow-300 font-sans text-white flex-auto h-26">
                 <p>Flex item 3</p>
             </div>
         </div>
@@ -72,18 +72,33 @@ flex-grow also allows the item to grow. But flex-grow-0 prevents them from growi
     <div class="parent">
         <div class=" text-green-400 font-bold">Header</div>
         <div class="flex">
-            <div class= "text-green-400 font-bold">Main Content</div>
+            <div class= "text-green-400 font-bold ">Main Content</div>
             <div class=" text-green-400 font-bold">SideBar</div>
         </div>
         
     </div>
 <!--All the justify content in regular css works in tailwind in a similar fashion, but you'll omit the 'content' word
-This also applies to align items, you just use align-start-->
-    <div class="flex flex-wrap justify-between">
-        <div class="bg-purple-500 p-3 h-17">block 1 </div>
+This also applies to align items, you just use items-start-->
+    <div class=" h-80 flex flex-col flex-wrap justify-between items-center bg-slate-600">
+        <div class="bg-purple-500 p-3">block 1 with some text</div>
+        <div class="bg-pink-300 p-3 text-white text-4xl self-stretch">block 2 text </div>
+        <div class="bg-blue-600 p-3 self-end">block 3 </div>
+        <div class="bg-red-400 p-3 self-start">block 4 </div>
+    </div>
+
+    <div class=" my-12 h-80 flex flex-wrap justify-between items-center  bg-slate-600">
+        <div class="bg-purple-500 p-3 ">block 1</div>
+        <div class="bg-pink-300 p-3 text-white text-4xl ">block 2 </div>
+        <div class="bg-blue-600 p-3 ">block 3</div>
+        <div class="bg-red-400 p-3 ">block 4 red </div>
+    </div>
+
+    <div class="flex justify-evenly items-center bg-slate-600">
+        <div class="bg-purple-500 p-3 flex-shrink-0">block 1 Lorem ipsum dolort,elit. Error dignissimos deleniti repellat dicta veritatis nesciunt voluptate architecto hic velit enim. Pariatur architecto, vitae placeat laborum possimus in quas esse est.</div>
         <div class="bg-pink-300 p-3">block 2 </div>
-        <div class="bg-blue-600 p-3">block 3 </div>
+        <div class="bg-blue-600 p-3">block 3</div>
         <div class="bg-red-400 p-3">block 4 </div>
     </div>
+
 </body>
 </html>
